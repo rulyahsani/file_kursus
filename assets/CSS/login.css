@@ -1,0 +1,165 @@
+* {
+	margin:0;
+	padding: 0;
+}
+body {
+	background-color: #FaFaFa;
+
+}
+
+.box-body {
+	margin-left: 150px;
+	margin-top:50px;
+	width: 500px;
+	/*height: 500px;*/
+	/*border:1px solid #000;*/
+	border-radius: 5px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 2px 4px 6px rgba(0,0,0,.35);
+	margin-bottom: 50px;
+}
+.box-body h3 {
+	text-align: center;
+	font-size: 26px;
+}
+.form-input {
+	margin-left: 40px;
+	margin-top: 30px;
+}
+
+.form-input label {
+	font-size: 14px;
+	opacity: 0.5;
+}
+
+.form-input input[type="text"] {
+	width: 370px;
+	height: 40px;
+	padding: 5px;
+	border:1px solid #c2c2c2;
+	border-radius: 5px;
+}
+.form-input input[type="password"] {
+	width: 370px;
+	height: 40px;
+	padding: 5px;
+	border:1px solid #c2c2c2;
+	border-radius: 5px;
+}
+.box-body a {
+	text-decoration: none;
+	margin-top: 10px;
+	font-size: 13px;
+	color: green;
+	margin-left: 40px;
+}
+
+.btn-submit {
+	margin-left: 90px;
+	text-align: center;
+	margin-top: 40px;
+	width: 280px;
+	height: 40px;
+	border:1px solid #376AFB;
+	line-height: 40px;
+	background-color: #376AFB; 
+	border-radius: 5px;
+	color: #fff;
+	text-transform:uppercase;
+	font-weight: bold;
+}
+
+/*.btn-submit a {
+	color: #fff;
+	margin-right: 40px;
+}*/
+
+
+.menu-title {
+	display: flex;
+	justify-content: space-around;
+	margin-left:40px;
+	margin-right:40px;
+	margin-top: 20px;
+}
+
+.menu-title .lines1, .lines2 {
+	width: 90px;
+	height: 2px;
+	background-color: #ccc;
+	margin-top: 10px;
+}
+
+form .menu-title .judul h3 {
+	font-size: 14px;
+	opacity: 0.6;
+}
+
+.login-sosmed {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+.login-sosmed .fb, .ggl {
+	width: 150px;
+	height: 40px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 40px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+}
+
+.login-sosmed .fb:hover, .ggl:hover {
+	background-color: #f2f2f2;
+	border:1px solid #f2f2f2;
+}
+
+.notif h3 {
+	font-size: 15px;
+	margin-top:35px;
+	text-align: center;
+	color:#ccc;
+}
+.notif a {
+	margin-left: 180px;
+	color: green;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width:600px) {
+	.box-body {
+	margin-left: 20px;
+	margin-top:50px;
+	width: 400px;
+	/*height: 500px;*/
+	/*border:1px solid #000;*/
+	border-radius: 5px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 2px 4px 6px rgba(0,0,0,.35);
+	margin-bottom: 50px;
+}
+
+.form-input input[type="text"] {
+	width: 310px;
+	height: 35px;
+
+}
+.form-input input[type="password"] {
+	width: 310px;
+	height: 35px;
+
+}
+
+.btn-submit {
+	margin-left: 60px;
+	cursor: pointer;
+}
+	
+}
+

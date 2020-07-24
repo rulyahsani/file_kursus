@@ -1,0 +1,624 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fafafa;
+	overflow-x: hidden;
+}
+
+.head-navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 70px;
+	/*border:1px solid black;*/
+	/*padding-left: 50px;*/
+	padding-right: 50px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.15);
+	/*position: absolute;*/
+}
+.head-navbar .name-logo {
+	width: 250px;
+	height: 70px;
+	border:2px solid rgba(0,0,255,0.7);
+	display: flex;
+	align-items: center;
+	background-color: rgba(0,0,255,0.7);
+	text-align: center;
+}
+.head-navbar .name-logo h3 {
+	/*font-family: 'Acme', sans-serif;*/
+	/*font-family: 'Righteous', cursive;*/
+	font-family: 'Russo One', sans-serif;
+	font-size: 30px;
+	margin-top: 5px;
+	color: #fff;
+	text-shadow: 1px 2px 3px rgba(0,0,0,.45);
+	/*position:absolute;*/
+	margin-left: 50px;
+}
+
+.head-navbar .user {
+	width: 50px;
+	height: 50px;
+	border:1px solid #1E1D1D;
+	background-color: #1E1D1D;
+	border-radius: 50%;
+	/*line-height: 60px;*/
+	text-align: center;
+	cursor: pointer;
+}
+.head-navbar .user h4 {
+	color: #fff;
+	line-height: 45px;
+}
+.head-navbar .logout {
+	/*border:1px solid #262BF3;*/
+	width: 150px;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 10px;
+	padding-right: 5px;
+	padding-left:5px;
+	/*background-color: #262BF3;*/
+
+}
+
+.head-navbar .logout .bell i {
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.head-navbar .logout .bell .counter {
+	width: 20px;
+	height: 20px;
+	border:1px solid orange;
+	background-color: orange;
+	color: #fff;
+	text-align: center;
+	line-height: 15px;
+	border-radius: 50%;
+	position: absolute;
+	margin-top: -30px;
+	margin-left: 15px;
+}
+.head-navbar .logout span, i {
+	color: #000;
+	cursor: pointer;
+}
+
+.head-navbar .logout span:hover {
+	color:blue;
+}
+.keluar {
+	position: absolute;
+	/*float: right;*/
+	display: none;
+	width: 250px;
+	/*height: 35px;*/
+	/*padding:15px;*/
+	border:1px solid #fff;
+	/*justify-content: space-evenly;*/
+	align-items: center;
+	background-color: #fff;
+	box-shadow: 0 3px 4px rgba(0,0,0,.25);
+	border-radius: 5px;
+	/*padding-left: 30px;*/
+	cursor: pointer;
+	margin-left: 1050px;
+
+}
+.keluar ul {
+	list-style-type: none;
+	/*display: flex;*/
+	/*align-items: center;*/
+}
+.keluar ul li {
+	width: 250px;
+	height: 40px;
+	padding-left:20px;
+	padding-top: 5px;
+}
+.keluar ul li:hover {
+	background-color: #F3EFEF;
+}
+
+
+section .content-course {
+	display: flex;
+	/*justify-content: space-between;*/
+	/*margin-top: 70px;*/
+	/*position: fixed;*/
+	/*margin-bottom: 60px;*/
+}
+section .content-course .sidebar {
+	left: 0;
+	width: 85px;
+	height: 100vh;
+	/*border:1px solid rgba(0,0,255,0.7);*/
+	position: relative;
+	/*top: 70px;*/
+	background-color: rgba(0,0,255,0.7);
+	transition: 0.5s;
+
+}
+
+section .icon-menu {
+	text-align: center;
+}
+section .icon-menu .home, .tutor, .date, .chart, .setting {
+	width: 65px;
+	height: 65px;
+	border:1px solid #717DF2;
+	border-radius: 10px;
+	display: block;
+	line-height: 70px;
+	margin-top:15px;
+	margin-left: 4px;
+	background-color: #717DF2;
+}
+section .icon-menu span {
+	display: none;
+}
+section .icon-menu .home:hover, .tutor:hover, .date:hover, .chart:hover, .setting:hover {
+	background-color: #fafafa;
+
+}
+section .icon-menu ul li:hover::before {
+	content: '';
+
+}
+section .icon-menu i {
+
+	font-size: 30px;
+	margin-top: 10px;
+}
+section .icon-menu span {
+	font-size: 12px;
+}
+
+.content-course .menu-content {
+	width: 100%;
+	margin:70px 60px 70px 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content-course .menu-content .course-box .create-course {
+	width: 900px;
+	height: 200px;
+	border:1px solid #D9D6D6;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.content-course .menu-content h3 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.content-course .menu-content .btn-create {
+	width: 250px;
+	height: 50px;
+	background-color: #F23535;
+	border:1px solid #F23535;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 50px;
+}
+.content-course .menu-content .btn-create a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.content-course .menu-content .course-box .boxs {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	
+}
+
+
+.content-course .menu-content .title-box {
+	margin-top: 40px;
+}
+
+.content-course .menu-content .course-box .boxs .box-left, .box-right {
+	width: 440px;
+	height: 200px;
+	border:1px solid #D9D6D6;
+	padding:20px;
+	flex-flow: column;
+}
+
+.content-course .menu-content .course-box .boxs .box-left h3, .box-right h3 {
+	font-size: 16px;
+}
+.content-course .menu-content .course-box .boxs .box-left p, .box-right p {
+	font-size: 14px;
+}
+.content-course .menu-content .course-box .boxs .box-left i, .box-right i {
+	font-size: 100px;
+	position: absolute;
+	opacity: 0.3;
+	margin-left: 270px;
+}
+.content-course .menu-content .bio-tutor {
+	width: 250px;
+	height: 485px;
+	border:1px solid #D9D6D6;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.content-course .menu-content .bio-tutor img {
+	width: 150px;
+	height: 150px;
+	border:1px solid silver;
+	border-radius: 50%;
+}
+.biografi {
+	margin-top: 20px;
+}
+.biografi h4 {
+	font-size: 16px;
+}
+.biografi .education h3, span {
+	font-size: 14px;
+	font-weight: bold;
+}
+.biografi .rate {
+	width: 220px;
+	height: 70px;
+	border:1px solid #E8E4E4;
+	margin:50px auto;
+	display: flex;
+	border-radius: 5px;
+	align-items: center;
+	background-color: #E8E4E4;
+}
+
+.biografi .rate .rate-name {
+	width: 55px;
+	height: 55px;
+	background-color: #B1AFAF;
+	border:1px solid #B1AFAF;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 13px;
+	color: #fff;
+	margin-left: 6px;
+	font-weight: bold;
+}
+
+.biografi .rate .star {
+	display: flex;
+	list-style:none;
+	margin-left: 10px;
+	margin-top: 12px;
+}
+.biografi .rate .star li i {
+	color: gold;
+	margin-left: 5px;
+	font-size: 18px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom :5px solid blue;
+    height: 100px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.25);
+}
+.copyright .hak h4, .logo h4, .year h4 {
+    font-size: 12px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+.head-navbar {
+	display: flex;
+	height: 70px;
+	padding-right: 30px;
+}
+.head-navbar .name-logo {
+	width: 250px;
+	height: 70px;
+	border:1px solid rgba(0,0,255,0.7);
+}
+.head-navbar .user {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+.head-navbar .user h4 {
+	color: #fff;
+	font-size: 14px;
+	margin-top:-3px;
+}
+.head-navbar .logout {
+	/*border:1px solid #262BF3;*/
+	width: 120px;
+	height: 50px;
+}
+
+
+.keluar {
+	margin-left: 380px;
+
+}
+.keluar ul {
+	list-style-type: none;
+	/*display: flex;*/
+	/*align-items: center;*/
+}
+
+section .icon-menu i {
+
+	font-size: 24px;
+	margin-top: 10px;
+}
+section .icon-menu span {
+	font-size: 11px;
+}
+
+section .content-course .sidebar {
+	left: 0;
+	width: 85px;
+	height: 150vh;
+	/*border:1px solid rgba(0,0,255,0.7);*/
+	position: relative;
+	/*top: 70px;*/
+	background-color: rgba(0,0,255,0.7);
+	transition: 0.5s;
+
+}
+
+.content-course .menu-content {
+	width: 100%;
+	margin:30px 30px 30px 30px;
+	display: block;
+}
+
+.content-course .menu-content .course-box .create-course {
+	width: 550px;
+	height: 150px;
+	padding: 20px;
+}
+
+.content-course .menu-content h3 {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.content-course .menu-content .btn-create {
+	width: 200px;
+}
+
+
+.content-course .menu-content .course-box .boxs {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	flex-wrap: wrap;
+	
+}
+
+
+.content-course .menu-content .course-box .boxs .box-left, .box-right {
+	width: 270px;
+	height: 270px;
+}
+
+.content-course .menu-content .course-box .boxs .box-left i, .box-right i {
+	opacity: 0.2;
+	margin-left: 120px;
+}
+.content-course .menu-content .bio-tutor {
+	width: 550px;
+	height: 380px;
+	margin-top: 10px;
+}
+
+.content-course .menu-content .bio-tutor img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+}
+
+@media only screen and (max-width:586px) {
+	
+.head-navbar {
+	display: flex;
+	height: 60px;
+	position: relative;
+	padding-right: 20px;
+}
+.head-navbar .name-logo {
+	width: 170px;
+	height: 60px;
+	display: flex;
+}
+.head-navbar .name-logo h3 {
+	font-size: 25px;
+	margin-left: 25px;
+}
+
+.head-navbar .user {
+	width: 40px;
+	height: 40px;
+}
+.head-navbar .user h4 {
+	line-height: 45px;
+}
+
+.head-navbar .logout .bell i {
+	font-size: 25px;
+	margin-top: 5px;
+}
+
+.keluar {
+	margin-left: 220px;
+	z-index: 99;
+}
+
+
+section .content-course {
+	display: flex;
+	width: 100%;
+	/*border:1px solid black;*/
+	/*justify-content: space-between;*/
+	/*margin-top: 70px;*/
+	/*position: fixed;*/
+}
+section .content-course .sidebar {
+	left: 0;
+	width: 510px;
+	height: 75px;
+	/*border:1px solid black;*/
+	/*border:1px solid rgba(0,0,255,0.7);*/
+	position: absolute;
+	/*top: 70px;*/
+	background-color: rgba(0,0,255,0.7);
+	transition: 0.5s;
+	/*margin-bottom:20px;*/
+
+}
+
+section .icon-menu {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	width: 500px;
+	justify-content: space-around;
+	/*border:1px solid black;*/
+	height: 75px;
+}
+section .icon-menu .home, .tutor, .chart, .date, .setting {
+	width: 50px;
+	height: 50px;
+	border:1px solid #383535;
+	border-radius: 50%;
+	display: block;
+	background-color: #383535;
+	/*margin-top: -13px;*/
+	line-height: 50px;
+	margin-bottom:10px;
+}
+
+section .icon-menu .fas {
+	font-size: 20px;
+	color: #fff;
+}
+section .icon-menu .home:hover,.tutor:hover,.chart:hover, .date:hover, .setting:hover {
+	background-color: #fafafa;
+	color: #000;
+	border:1px solid #fafafa;
+	/*border-top-right-radius: 50px;*/
+
+
+}
+section .icon-menu .home i:hover, .tutor i:hover, .chart i:hover, .date i:hover, .setting i:hover {
+	color: #000;
+}
+section .icon-menu ul li:hover::before {
+	content: '';
+
+}
+section .icon-menu i {
+
+	font-size: 30px;
+	margin-top: 14px;
+}
+section .icon-menu span {
+	font-size: 12px;
+}
+
+.content-course .menu-content {
+	position: relative;
+	width: 100%;
+	/*border:1px solid black;*/
+	margin:90px 20px 30px 20px;
+}
+
+.content-course .menu-content .course-box .create-course {
+	width: 465px;
+	height: 150px;
+}
+
+.content-course .menu-content h3 {
+	font-size: 15px;
+}
+
+.content-course .menu-content .btn-create {
+	width: 200px;
+	height: 45px;
+	line-height: 45px;
+}
+
+.content-course .menu-content .course-box .boxs .box-left, .box-right {
+	width: 465px;
+	height: 160px;
+	margin-top: 10px;
+}
+
+.content-course .menu-content .course-box .boxs .box-left h3, .box-right h3 {
+	font-size: 14px;
+}
+.content-course .menu-content .course-box .boxs .box-left p, .box-right p {
+	font-size: 13px;
+}
+.content-course .menu-content .course-box .boxs .box-left i, .box-right i {
+	margin-left: 280px;
+}
+.content-course .menu-content .bio-tutor {
+	width: 465px;
+	height: 380px;
+	margin-top: 10px;
+}
+
+.content-course .menu-content .bio-tutor img {
+	width: 100px;
+	height: 100px;
+}
+.biografi {
+	margin-top: 20px;
+}
+.biografi h4 {
+	font-size: 16px;
+}
+.biografi .education h3, span {
+	font-size: 13px;
+}
+
+
+.copyright {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom :5px solid blue;
+    height: 100px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.25);
+}
+.copyright .hak h4, .logo h4, .year h4 {
+    font-size: 12px;
+}
+}
+
+
+
